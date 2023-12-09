@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: black;
+    background-image: url(/imagens/backgroundHOME.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    backdrop-filter: blur(5px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+.textPrincipal {
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.textPrincipal h1 {
+    font-family: 'Dela Gothic One', cursive !important;
+    color: white;
+}
+
+main {
+    width: 100%;
+    height: 70rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.containerCard {
+    width: 100%;
+    height: 35rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cardPai {
+    width: 20rem;
+    border-radius: 10px;
+    height: 30rem;
+    background-color: #0e0d0d;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid #727272ce
+}
+
+.cardPai img {
+    width: 100%;
+    height: 40%;
+    border-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.cardText {
+    width: 100%;
+    height: 15%;
+    text-align: center;
+}
+
+.cardText h1 {
+    color: #ffffff;
+}
+
+.cardText p {
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.589);
+}
+
+.cardInfosPai {
+    width: 80%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #25242488;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding: 5px;
+    border: 1px solid #727272ce;
+}
+
+.cardInfos {
+    width: 80%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.26);
+}
+
+.pog {
+    border-bottom: transparent;
+}
+
+.cardInfos p {
+    color: rgba(255, 255, 255, 0.774);
+}
+
+@media screen and (max-width: 970px) {
+    main {
+        width: 100%;
+        height: 140rem;
+    }
+
+    .containerCard {
+        display: flex;
+        flex-wrap: wrap;
+        height: 70rem;
+    }
+
+}
+
+@media screen and (max-width: 655px) {
+    .containerCard {
+        gap: 20px;
+        height: 100rem;
+    }
+
+    main {
+        height: 203rem;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .textPrincipal h1 {
+        width: 600px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .textPrincipal h1 {
+        width: 400px;
+    }
+}

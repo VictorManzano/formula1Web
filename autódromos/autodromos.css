@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background-color: black;
+    background-image: url(/imagens/backgroundHOME.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+.textPrincipal {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.textPrincipal h1 {
+    font-family: 'Dela Gothic One', cursive !important;
+    letter-spacing: 1px;
+}
+
+main {
+    width: 100%;
+    height: 82rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+
+.containerCard {
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.cardPai img {
+    width: 30%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.cardPai {
+    width: 65rem;
+    height: 250px;
+    background-color: rgb(14, 13, 13);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-radius: 10px;
+    border: 1px solid #727272ce;
+}
+
+
+.cardText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 35%;
+    height: 100%;
+    margin-left: 20px;
+    gap: 40px;
+
+}
+
+.cardText h1 {
+    font-size: 2rem;
+    color: white;
+    text-align: start;
+}
+
+.cardText p {
+    color: #ffffff8f;
+    text-align: starrt;
+}
+
+.infosCardPai {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.infosCard {
+    width: 90%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    border-bottom: 1px solid #505050;
+}
+
+.infosCard p {
+    font-weight: bold;
+}
+
+.infosCard span {
+    font-weight: normal;
+    color: #ffffffbd;
+    margin-left: 5px;
+}
+
+.infosCard img {
+    margin-bottom: 5px;
+}
+
+
+.linha {
+    width: 1px;
+    height: 80%;
+    background-color: #505050;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .cardPai {
+        display: flex;
+        flex-direction: column;
+        width: 25rem;
+        height: 43rem;
+    }
+
+    .cardText p {
+        width: 400pxx;
+    }
+
+    .cardPai img {
+        width: 100%;
+        height: 35%;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 10px;
+    }
+
+    .cardText {
+        width: 90%;
+        height: 25%;
+    }
+
+    .infosCardPai {
+        width: 100%;
+        height: 35%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .linha {
+        width: 90%;
+        height: 1px;
+    }
+    
+   
+    .containerCard {
+        height: 45rem;
+        width: auto;
+        gap: 30px;
+    }
+
+    main {
+        display: flex;
+        height: 100rem;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+
+}
+
+
+@media screen and (max-width: 850px) {
+    main {
+        height: 100rem;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    main {
+        height: 185rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    body {
+        background-image: none;
+        background-color: black;
+    }
+
+    .textPrincipal {
+        margin-top: 30px;
+    }
+
+    .textPrincipal h1 {
+        width: 400px;
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+

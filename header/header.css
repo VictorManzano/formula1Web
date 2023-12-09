@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+
+
+header {
+    width: 100%;
+    height: 7rem;
+    border-bottom: 0.5px solid rgba(128, 128, 128, 0.356);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+ .logo {
+    width: 150px;
+    cursor: pointer;
+}
+
+.headerInfos {
+    display: flex;
+    gap: 30px;
+    height: 100%;
+    align-items: center;
+}
+
+.headerInfos p   {
+    font-family: 'Inter', sans-serif;
+    color: #a8a8b3;
+    padding: 15px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.headerInfos a {
+    text-decoration: none;
+    text-transform: none;
+    list-style-type: none;
+}
+
+
+
+.headerInfos p:hover {
+    color: rgb(255, 255, 255);
+    background: linear-gradient(to right, transparent 50%, #fa0303 50%);
+    background-size: 200% 100%;
+    background-position: -100%;
+    transition: background-position 0.5s ease;
+}
+
+.menu {
+    width: 50px;
+    display: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 650px) {
+    .menu {
+        display: block;
+        width: 60px;
+    }
+
+    .headerInfos {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 650px) {
+    .menuEscondido {
+        display: none !important;
+    }
+}
+
+
+.menuEscondido {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    background-color: rgb(24, 23, 23);
+    display: none;
+}
+
+.menuEscondido p {
+    font-family: 'Inter', sans-serif;
+    color: #a8a8b3;
+    font-size: 1rem;
+}
+
+.menuEscondido a {
+    text-decoration: none;
+}
+
+.mudar {
+    display: block;
+    display: flex;
+}
+
+
+footer {
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: rgba(24, 24, 24, 0.473);
+}
+
+
+
+
+.iconesFooter {
+    display: flex;
+    gap: 20px;
+}
+
+
+.iconesContainer {
+    background-color: #3f3e3e79;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.iconesContainer:hover {
+    background-color: #6b6b6b79;
+}
+
+.iconesContainer img {
+    height: 35px;
+    width: 35px;
+    margin: 0;
+}
+
+.textFooter {
+    display: flex;
+    align-items: center;
+}
+
+.textFooter h1 {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.507);
+}
+
+.textFooter span {
+    color: white;
+}
