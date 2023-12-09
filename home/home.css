@@ -10,7 +10,7 @@ body {
     font-family: 'Inter', sans-serif;
     width: 100%;
     height: 100vh;
-    background-image: url(/imagens/backgroundHOME.webp);
+    background-image: url(../imagens/backgroundHOME.webp);
     background-size: cover;
     background-repeat: no-repeat;
     backdrop-filter: blur(5px);
