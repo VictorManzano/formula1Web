@@ -10,7 +10,7 @@
 
 body {
     background-color: black;
-    background-image: url(/imagens/backgroundHOME.webp);
+    background-image: url(../imagens/backgroundHOME.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
